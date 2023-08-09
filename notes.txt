@@ -1,0 +1,9 @@
+https://jsonplaceholder.typicode.com/ website to grab api endpoints
+/todos endpoint
+useAffect cannot have an async, must crate separate functions
+
+Need to add the below:
+
+1. add a loading indicator found in loading indicator on the intro react app prep
+2. add error handling
+Due Thursday!
