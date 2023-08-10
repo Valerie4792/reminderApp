@@ -2,6 +2,9 @@ import axios from "axios";
 import Reminder from "../models/reminder";
 
 class ReminderServices {
+    getAll<T>(): { request: any; cancel: any; } {
+        throw new Error('Method not implemented.');
+    }
     http= axios.create({
         baseURL: 'https://jsonplaceholder.typicode.com/'
     })

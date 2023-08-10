@@ -1,3 +1,21 @@
 body{
   padding: 20px;
+  background-image: url('../Images/1177491.jpg');
+  
 }
+.font{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(114, 155, 237);
+  font-weight: 900;
+}
+.btn-color{
+  background-color: rgb(224, 178, 224);
+}
+.list-group-item{
+  background-color: rgba(245, 240, 235, 0.594) !important;
+  
+}
+.header{
+  background-color: rgba(245, 240, 235, 0.594);
+}
+

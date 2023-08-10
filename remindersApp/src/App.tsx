@@ -9,14 +9,26 @@ import NewReminder from "./components/NewReminder";
 
 function App() {
 const [reminders, setReminders] = useState<Reminder[]>([]);
+const [isLoading, setIsLoading] = useState(false);
+const [error, setError] = useState<string | null >(null);
 
 useEffect(() =>{
 loadReminders();
 }, [])
 
 const loadReminders = async() => {
-  const reminders = await reminderServices.getReminders();
-  setReminders(reminders)
+  setIsLoading(true);
+  setError(null);
+  
+  try{const reminders = await reminderServices.getReminders();
+    setReminders(reminders);}
+  
+  catch(error){setError('An error occured while loading the page')}
+  
+  setIsLoading(false)
+
+
+
 }
 
 const removeReminder = (id:number)=>{
@@ -29,8 +41,13 @@ const addReminder = async(title:string) =>{
 }
 
   return (
-    <div className="App">
+    <div className="App font">
+      <div className="header">
+      <h1 className="text-center">DON'T FORGET</h1>
+      </div>
       <NewReminder onAddReminder={addReminder}/>
+      {isLoading && <div className="spinner-border"></div>}
+      {error && <div className="error-message text-bg-danger">{error}</div>}
       <ReminderList items={reminders} onRemoveReminder={removeReminder}/>
     </div>
   );
