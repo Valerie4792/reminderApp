@@ -7,3 +7,6 @@ Need to add the below:
 1. add a loading indicator found in loading indicator on the intro react app prep
 2. add error handling
 Due Thursday!
+////////////////////////////////////////////////////////////////////////////////////
+////Peer Reviewed by Patrick////
+Comment: 'Looks pretty, and works!'

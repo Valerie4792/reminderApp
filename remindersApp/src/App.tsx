@@ -27,8 +27,6 @@ const loadReminders = async() => {
   
   setIsLoading(false)
 
-
-
 }
 
 const removeReminder = (id:number)=>{

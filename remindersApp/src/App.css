@@ -1,11 +1,11 @@
 body{
   padding: 20px;
   background-image: url('../Images/1177491.jpg');
-  
+
 }
 .font{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(114, 155, 237);
+  font-family: Verdana;
+  color: rgb(67, 115, 210);
   font-weight: 900;
 }
 .btn-color{
